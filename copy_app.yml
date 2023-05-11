@@ -1,0 +1,9 @@
+---
+- name: Copy folder app to managed hosts
+  hosts: all
+
+  tasks:
+    - name: Copy folder
+      copy:
+        src: ./app
+        dest: ~/
